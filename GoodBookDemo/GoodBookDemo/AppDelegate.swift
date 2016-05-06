@@ -17,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
        
+        
+    
+        /**
+        设置LeanCloud
+        */
+        AVOSCloud.setApplicationId("i40Bw8oWkFemep2Rn2k9e5WX", clientKey: "MpeDsXwLTcQuuhplDjN1Hs8l")
+    
         self.window = UIWindow(frame: CGRectMake(0, 0, MGScreen_Width, MGScreen_Height))
         
         let tabBarVC = UITabBarController()

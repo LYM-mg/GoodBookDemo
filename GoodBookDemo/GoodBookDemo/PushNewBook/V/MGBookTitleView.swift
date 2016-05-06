@@ -15,8 +15,8 @@ import UIKit
 class MGBookTitleView: UIView {
     
     var bookCover: UIButton?
-    var bookName: UITextField?
-    var bookEditor: UITextField?
+    var bookName: JVFloatLabeledTextField?
+    var bookEditor: JVFloatLabeledTextField?
     weak var delegate: MGBookTitleViewDelegate?
 
     override init(frame: CGRect) {
@@ -36,10 +36,10 @@ class MGBookTitleView: UIView {
         bookCover?.addTarget(self, action: Selector("changebookCover"), forControlEvents: .TouchUpInside)
         
         let bookNameX = CGRectGetMaxX((bookCover?.frame)!) + 20
-        bookName = UITextField(frame: CGRectMake(bookNameX, 48, MGScreen_Width - bookNameX, 30))
+        bookName = JVFloatLabeledTextField(frame: CGRectMake(bookNameX, 48, MGScreen_Width - bookNameX, 30))
         bookName?.placeholder = "请输入书名"
         
-        bookEditor = UITextField(frame: CGRectMake(bookNameX, 48 + 30 + 40, MGScreen_Width - bookNameX, 30))
+        bookEditor = JVFloatLabeledTextField(frame: CGRectMake(bookNameX, 48 + 30 + 40, MGScreen_Width - bookNameX, 30))
         bookEditor?.placeholder = "请输入作者的名字"
         
         

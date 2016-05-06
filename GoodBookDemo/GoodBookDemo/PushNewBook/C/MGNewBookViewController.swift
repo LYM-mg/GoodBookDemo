@@ -106,7 +106,7 @@ extension MGNewBookViewController: UITableViewDataSource,UITableViewDelegate {
         if isShowStar && indexPath.row == 2{
             cell.contentView.addSubview(self.LD_Score!)
         }
-        
+    
         switch indexPath.row{
             case 0:
                 cell.detailTextLabel?.text = book_Title
@@ -126,7 +126,12 @@ extension MGNewBookViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        switch indexPath.row{
+        var row = indexPath.row
+        if self.isShowStar && indexPath.row >= 1 {
+            row -= 1
+        }
+        
+        switch row{
         case 0:
             tableViewSelectTitle()
             break

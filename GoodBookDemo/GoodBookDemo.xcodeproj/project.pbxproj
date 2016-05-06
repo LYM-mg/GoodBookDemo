@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A6532FC1CDC819A0062D687 /* MGPhotoSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6532FB1CDC819A0062D687 /* MGPhotoSelectController.swift */; settings = {ASSET_TAGS = (); }; };
 		3A78146D1CDC62E7008CB0B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78146C1CDC62E7008CB0B3 /* AppDelegate.swift */; };
 		3A7814751CDC62E7008CB0B3 /* GoodBookDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A7814731CDC62E7008CB0B3 /* GoodBookDemo.xcdatamodeld */; };
 		3A7814771CDC62E7008CB0B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7814761CDC62E7008CB0B3 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A6532FB1CDC819A0062D687 /* MGPhotoSelectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGPhotoSelectController.swift; sourceTree = "<group>"; };
 		3A7814691CDC62E7008CB0B3 /* GoodBookDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodBookDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A78146C1CDC62E7008CB0B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A7814741CDC62E7008CB0B3 /* GoodBookDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoodBookDemo.xcdatamodel; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			children = (
 				3A78149A1CDC663A008CB0B3 /* MGPushViewController.swift */,
 				3A7814A41CDC7187008CB0B3 /* MGNewBookViewController.swift */,
+				3A6532FB1CDC819A0062D687 /* MGPhotoSelectController.swift */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				3A7814A71CDC73F8008CB0B3 /* MGBookTitleView.swift in Sources */,
 				3A78146D1CDC62E7008CB0B3 /* AppDelegate.swift in Sources */,
 				3A7814991CDC662D008CB0B3 /* MGSearchViewController.swift in Sources */,
+				3A6532FC1CDC819A0062D687 /* MGPhotoSelectController.swift in Sources */,
 				3A7814971CDC6622008CB0B3 /* MGRankViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +493,7 @@
 				3A7814801CDC62E7008CB0B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

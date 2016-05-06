@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MGNewBookViewController: UIViewController ,MGBookTitleViewDelegate{
+class MGNewBookViewController: UIViewController ,MGBookTitleViewDelegate,MGPhotoSelectControllerDelegate{
 
     var bookTitleView: MGBookTitleView?
     override func viewDidLoad() {
@@ -33,6 +33,13 @@ class MGNewBookViewController: UIViewController ,MGBookTitleViewDelegate{
 
     // MARK:- MGBookTitleViewDelegate
     func choiceBookCover() {
-        
+        let photoSelectController = MGPhotoSelectController()
+        photoSelectController.delegate = self
+        presentViewController(photoSelectController, animated: true, completion: nil)
+    }
+    
+    // MARK:- MGPhotoSelectControllerDelegate
+    func selectImage(image: UIImage) {
+        bookTitleView?.bookCover?.setImage(image, forState: .Normal)
     }
 }

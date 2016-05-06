@@ -20,7 +20,7 @@ class MGFactor: NSObject {
         
         let btn2 = UIButton(frame: CGRectMake(MGScreen_Width - 10 - 40, 20, 40, 30))
         btn2.setTitleColor(MAIN_Color, forState: .Normal)
-        btn2.setTitle(leftTitle, forState: .Normal)
+        btn2.setTitle(rightTitle, forState: .Normal)
         btn2.titleLabel?.font = UIFont.systemFontOfSize(16)
         btn2.contentHorizontalAlignment = .Right
         btn2.addTarget(target, action: Selector("sure"), forControlEvents: .TouchUpInside)

@@ -35,7 +35,7 @@ class MGBookTitleView: UIView {
         bookCover?.setImage(UIImage(named: "chat_photo"), forState: .Normal)
         bookCover?.addTarget(self, action: Selector("changebookCover"), forControlEvents: .TouchUpInside)
         
-        let bookNameX = CGRectGetMinX((bookCover?.frame)!) + 20
+        let bookNameX = CGRectGetMaxX((bookCover?.frame)!) + 20
         bookName = UITextField(frame: CGRectMake(bookNameX, 48, MGScreen_Width - bookNameX, 30))
         bookName?.placeholder = "请输入书名"
         

@@ -17,7 +17,7 @@ class MGBookTitleView: UIView {
     var bookCover: UIButton?
     var bookName: UITextField?
     var bookEditor: UITextField?
-    var delegate: MGBookTitleViewDelegate
+    var delegate: MGBookTitleViewDelegate?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,9 +32,8 @@ class MGBookTitleView: UIView {
     //MARK:- 内部控制方法
     func setUpUI(){
         bookCover = UIButton(frame: CGRectMake(10, 8, 110, 140))
-        bookCover?.setImage(UIImage(named: ""), forState: .Normal)
+        bookCover?.setImage(UIImage(named: "chat_photo"), forState: .Normal)
         bookCover?.addTarget(self, action: Selector("changebookCover"), forControlEvents: .TouchUpInside)
-        self.addSubview(bookCover!)
         
         let bookNameX = CGRectGetMinX((bookCover?.frame)!) + 20
         bookName = UITextField(frame: CGRectMake(bookNameX, 48, MGScreen_Width - bookNameX, 30))
@@ -43,9 +42,13 @@ class MGBookTitleView: UIView {
         bookEditor = UITextField(frame: CGRectMake(bookNameX, 48 + 30 + 40, MGScreen_Width - bookNameX, 30))
         bookName?.placeholder = "请输入作者的名字"
         
+        
+        self.addSubview(bookCover!)
+        self.addSubview(bookName!)
+        self.addSubview(bookEditor!)
     }
     
     func changebookCover(){
-        delegate.choiceBookCover!()
+        delegate!.choiceBookCover!()
     }
 }

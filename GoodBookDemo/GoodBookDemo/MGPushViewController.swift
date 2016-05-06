@@ -37,7 +37,9 @@ class MGPushViewController: UIViewController {
     }
     
     @objc func pushNewBook(){
-        
+        let newBookController = MGNewBookViewController()
+        MGFactor().addTitleWithTitle(newBookController, leftTitle: "关闭", rightTitle: "发布")
+        presentViewController(newBookController, animated: true, completion: nil)
     }
 
 }

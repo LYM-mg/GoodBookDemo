@@ -18,9 +18,17 @@ class MGNewBookViewController: UIViewController ,MGBookTitleViewDelegate{
         
         bookTitleView = MGBookTitleView(frame: CGRectMake(0, 40, MGScreen_Width, 160))
         bookTitleView?.delegate = self
+        self.view.addSubview(bookTitleView!)
     }
     
+    // 按钮监听操作
+    func close(){
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     
+    func sure(){
+        print("发布")
+    }
     
 
     // MARK:- MGBookTitleViewDelegate

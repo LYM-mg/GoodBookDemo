@@ -89,6 +89,9 @@
 		3A7AD8BB1CDD0CD2004BE6A6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7AD8BA1CDD0CD2004BE6A6 /* CoreTelephony.framework */; };
 		3A7AD8BD1CDD0D30004BE6A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7AD8BC1CDD0D30004BE6A6 /* SystemConfiguration.framework */; };
 		3A7AD8BF1CDD0D7A004BE6A6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7AD8BE1CDD0D7A004BE6A6 /* MobileCoreServices.framework */; };
+		3A7AD8C21CDD0EA3004BE6A6 /* MGLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7AD8C11CDD0EA3004BE6A6 /* MGLogin.storyboard */; settings = {ASSET_TAGS = (); }; };
+		3A7AD8C41CDD0F01004BE6A6 /* MGLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7AD8C31CDD0F00004BE6A6 /* MGLoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3A7AD8C61CDD0F14004BE6A6 /* MGRegistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7AD8C51CDD0F14004BE6A6 /* MGRegistViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -198,6 +201,9 @@
 		3A7AD8BA1CDD0CD2004BE6A6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		3A7AD8BC1CDD0D30004BE6A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3A7AD8BE1CDD0D7A004BE6A6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3A7AD8C11CDD0EA3004BE6A6 /* MGLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MGLogin.storyboard; sourceTree = "<group>"; };
+		3A7AD8C31CDD0F00004BE6A6 /* MGLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGLoginViewController.swift; sourceTree = "<group>"; };
+		3A7AD8C51CDD0F14004BE6A6 /* MGRegistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGRegistViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -510,6 +516,7 @@
 				3A5A499D1CDCD25100038572 /* Framework */,
 				3A5A49CE1CDCD25100038572 /* Third */,
 				3A5A49BA1CDCD25100038572 /* Resource */,
+				3A7AD8C01CDD0E83004BE6A6 /* Login */,
 				3A5A49B51CDCD25100038572 /* Rank */,
 				3A5A49C91CDCD25100038572 /* Search */,
 				3A7AD8431CDCDF15004BE6A6 /* PUSH */,
@@ -687,6 +694,16 @@
 			path = WeChatSDK;
 			sourceTree = "<group>";
 		};
+		3A7AD8C01CDD0E83004BE6A6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3A7AD8C11CDD0EA3004BE6A6 /* MGLogin.storyboard */,
+				3A7AD8C31CDD0F00004BE6A6 /* MGLoginViewController.swift */,
+				3A7AD8C51CDD0F14004BE6A6 /* MGRegistViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -776,6 +793,7 @@
 				3A7AD86C1CDCE532004BE6A6 /* settings-icon.png in Resources */,
 				3A7AD86D1CDCE532004BE6A6 /* settings-icon@2x.png in Resources */,
 				3A5A49EE1CDCD25100038572 /* ear2.png in Resources */,
+				3A7AD8C21CDD0EA3004BE6A6 /* MGLogin.storyboard in Resources */,
 				3A7AD84C1CDCDF5E004BE6A6 /* 隶变体.ttf in Resources */,
 				3A5A49EF1CDCD25100038572 /* Icon2.png in Resources */,
 				3A5A49EB1CDCD25100038572 /* Blank2.png in Resources */,
@@ -813,9 +831,11 @@
 				3A5A49E41CDCD25100038572 /* MGPush_CatgoryController.swift in Sources */,
 				3A5A49E51CDCD25100038572 /* MGPush_CommentController.swift in Sources */,
 				3A7AD8491CDCDF15004BE6A6 /* MGPushViewController.swift in Sources */,
+				3A7AD8C41CDD0F01004BE6A6 /* MGLoginViewController.swift in Sources */,
 				3A5A49E31CDCD25100038572 /* MGPhotoSelectController.swift in Sources */,
 				3A7AD84A1CDCDF15004BE6A6 /* MGBookTitleView.swift in Sources */,
 				3A78146D1CDC62E7008CB0B3 /* AppDelegate.swift in Sources */,
+				3A7AD8C61CDD0F14004BE6A6 /* MGRegistViewController.swift in Sources */,
 				3A5A49E81CDCD25100038572 /* MGRankViewController.swift in Sources */,
 				3A5A49FC1CDCD25100038572 /* LDXScore.m in Sources */,
 			);

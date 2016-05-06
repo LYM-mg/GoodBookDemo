@@ -15,7 +15,7 @@ class MGNewBookViewController: UIViewController,MGBookTitleViewDelegate,MGPhotoS
     var book_Title = ""
     
     var LD_Score: LDXScore?
-    var isShowStar = false
+    var isShowScore = false
     
     var titleArray:Array<String> = ["标题","评分","分类","书评"]
     
@@ -103,7 +103,7 @@ extension MGNewBookViewController: UITableViewDataSource,UITableViewDelegate {
         cell.textLabel?.font = UIFont.systemFontOfSize(14)
         cell.detailTextLabel?.font = UIFont.systemFontOfSize(14)
         
-        if isShowStar && indexPath.row == 2{
+        if isShowScore && indexPath.row == 2{
             cell.contentView.addSubview(self.LD_Score!)
         }
     
@@ -127,7 +127,7 @@ extension MGNewBookViewController: UITableViewDataSource,UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var row = indexPath.row
-        if self.isShowStar && indexPath.row >= 1 {
+        if self.isShowScore && row >= 1 {
             row -= 1
         }
         
@@ -136,7 +136,7 @@ extension MGNewBookViewController: UITableViewDataSource,UITableViewDelegate {
             tableViewSelectTitle()
             break
         case 1:
-            tableViewSelectScore(indexPath.row)
+            tableViewSelectScore(row)
             break
         case 2:
             tableViewSelectCatgory()
@@ -150,48 +150,66 @@ extension MGNewBookViewController: UITableViewDataSource,UITableViewDelegate {
     }
 
     // MARK:- 自定义方法
+    /**
+    *  选择标题
+    */
     private func tableViewSelectTitle(){
-        let titleController = MGPush_TitleController()
-        MGFactor().addTitleWithTitle(titleController)
-        titleController.callBack = {[unowned self](title) in
+        let vc = MGPush_TitleController()
+        MGFactor().addTitleWithTitle(vc)
+        vc.callBack = {[unowned self](title) in
             self.book_Title = title
             self.tableView?.reloadRowsAtIndexPaths([NSIndexPath(forRow: 0, inSection: 0)], withRowAnimation: .Fade)
         }
-        presentViewController(titleController, animated: true) { () -> Void in
+        presentViewController(vc, animated: true) { () -> Void in
             
         }
     }
     
-    private func tableViewSelectScore(index: Int){
-         let tempIndexPath = NSIndexPath(forRow: index+1, inSection: 0)
+    /**
+    *  选择评分
+    */
+    func tableViewSelectScore(index: Int){
+        /**
+        *  插入cell移除cell的动画
+        */
         self.tableView?.beginUpdates()
-        if isShowStar {
-            self.titleArray.removeAtIndex(index+1)
-            self.tableView?.deleteRowsAtIndexPaths([tempIndexPath], withRowAnimation: .Left)
-            self.tableView?.reloadData()
-            isShowStar = false
-        }else {
-            self.titleArray.insert("", atIndex: index+1)
-            self.tableView?.insertRowsAtIndexPaths([tempIndexPath], withRowAnimation: .Right)
-            self.tableView?.reloadData()
-            isShowStar = true
+        let tempIndexPath = [NSIndexPath(forRow: 2, inSection: 0)]
+        
+        if self.isShowScore{
+            self.titleArray.removeAtIndex(2)
+            self.tableView?.deleteRowsAtIndexPaths(tempIndexPath, withRowAnimation: .Right)
+            self.isShowScore = false
+        }else{
+            self.titleArray.insert("", atIndex: 2)
+            self.tableView?.insertRowsAtIndexPaths(tempIndexPath, withRowAnimation: .Left)
+            self.isShowScore = true
         }
+        
         self.tableView?.endUpdates()
     }
 
-    
+    /**
+    *  选择分类
+    */
     private func tableViewSelectCatgory(){
-        let catgoryController = MGPush_CatgoryController()
-        MGFactor().addTitleWithTitle(catgoryController)
-        presentViewController(catgoryController, animated: true) { () -> Void in
+        let vc = MGPush_CatgoryController()
+        MGFactor().addTitleWithTitle(vc)
+        let leftBtn = vc.view.viewWithTag(1000) as! UIButton
+        let rightBtn = vc.view.viewWithTag(1001) as! UIButton
+        leftBtn.setTitleColor(MG_RGB(39, g: 89, b: 99), forState: .Normal)
+        rightBtn.setTitleColor(MG_RGB(39, g: 89, b: 99), forState: .Normal)
+        
+        presentViewController(vc, animated: true) { () -> Void in
             
         }
     }
-
+    /**
+    *  选择评论
+    */
     private func tableViewSelectComment(){
-        let commentController = MGPush_CommentController()
-        MGFactor().addTitleWithTitle(commentController)
-        presentViewController(commentController, animated: true) { () -> Void in
+        let vc = MGPush_CommentController()
+        MGFactor().addTitleWithTitle(vc)
+        presentViewController(vc, animated: true) { () -> Void in
             
         }
     }

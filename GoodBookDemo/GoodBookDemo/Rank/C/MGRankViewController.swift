@@ -14,6 +14,14 @@ class MGRankViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
         
+        let centerLabel = UILabel()
+        centerLabel.center = CGPointMake(MGScreen_Width/2, MGScreen_Height/2)
+        centerLabel.text = "沃日，真是帅啊，JR疯起来毫不讲理啊"
+        centerLabel.frame.size.width = 300
+        centerLabel.frame.size.height = 30
+        centerLabel.numberOfLines = 0
+        centerLabel.font = UIFont(name: MG_FONT, size: 16)
+        self.view.addSubview(centerLabel)
         
         setUpNavgationBar()
     }

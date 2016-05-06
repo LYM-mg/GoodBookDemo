@@ -40,7 +40,7 @@ class MGBookTitleView: UIView {
         bookName?.placeholder = "请输入书名"
         
         bookEditor = UITextField(frame: CGRectMake(bookNameX, 48 + 30 + 40, MGScreen_Width - bookNameX, 30))
-        bookName?.placeholder = "请输入作者的名字"
+        bookEditor?.placeholder = "请输入作者的名字"
         
         
         self.addSubview(bookCover!)

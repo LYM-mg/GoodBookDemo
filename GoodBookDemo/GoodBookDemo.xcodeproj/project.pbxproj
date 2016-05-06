@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3A6532FC1CDC819A0062D687 /* MGPhotoSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6532FB1CDC819A0062D687 /* MGPhotoSelectController.swift */; settings = {ASSET_TAGS = (); }; };
+		3A6533001CDCAB950062D687 /* MGPush_TitleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6532FF1CDCAB950062D687 /* MGPush_TitleController.swift */; settings = {ASSET_TAGS = (); }; };
+		3A6533021CDCABB60062D687 /* MGPush_ScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6533011CDCABB60062D687 /* MGPush_ScoreController.swift */; settings = {ASSET_TAGS = (); }; };
+		3A6533041CDCABD50062D687 /* MGPush_CatgoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6533031CDCABD50062D687 /* MGPush_CatgoryController.swift */; settings = {ASSET_TAGS = (); }; };
+		3A6533061CDCAC190062D687 /* MGPush_CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6533051CDCAC190062D687 /* MGPush_CommentController.swift */; settings = {ASSET_TAGS = (); }; };
 		3A78146D1CDC62E7008CB0B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78146C1CDC62E7008CB0B3 /* AppDelegate.swift */; };
 		3A7814751CDC62E7008CB0B3 /* GoodBookDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A7814731CDC62E7008CB0B3 /* GoodBookDemo.xcdatamodeld */; };
 		3A7814771CDC62E7008CB0B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7814761CDC62E7008CB0B3 /* Assets.xcassets */; };
@@ -25,6 +29,10 @@
 
 /* Begin PBXFileReference section */
 		3A6532FB1CDC819A0062D687 /* MGPhotoSelectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGPhotoSelectController.swift; sourceTree = "<group>"; };
+		3A6532FF1CDCAB950062D687 /* MGPush_TitleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGPush_TitleController.swift; sourceTree = "<group>"; };
+		3A6533011CDCABB60062D687 /* MGPush_ScoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGPush_ScoreController.swift; sourceTree = "<group>"; };
+		3A6533031CDCABD50062D687 /* MGPush_CatgoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGPush_CatgoryController.swift; sourceTree = "<group>"; };
+		3A6533051CDCAC190062D687 /* MGPush_CommentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGPush_CommentController.swift; sourceTree = "<group>"; };
 		3A7814691CDC62E7008CB0B3 /* GoodBookDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodBookDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A78146C1CDC62E7008CB0B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A7814741CDC62E7008CB0B3 /* GoodBookDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoodBookDemo.xcdatamodel; sourceTree = "<group>"; };
@@ -54,6 +62,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A6532FD1CDCA3F30062D687 /* O */ = {
+			isa = PBXGroup;
+			children = (
+				3A7814A81CDC7941008CB0B3 /* factor */,
+			);
+			name = O;
+			sourceTree = "<group>";
+		};
+		3A6532FE1CDCA4110062D687 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Third;
+			sourceTree = "<group>";
+		};
 		3A7814601CDC62E7008CB0B3 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +96,7 @@
 		3A78146B1CDC62E7008CB0B3 /* GoodBookDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3A6532FE1CDCA4110062D687 /* Third */,
 				3A7814891CDC6597008CB0B3 /* More */,
 				3A78149E1CDC6663008CB0B3 /* Circle */,
 				3A7814881CDC658F008CB0B3 /* Push */,
@@ -93,7 +117,6 @@
 		3A7814811CDC6341008CB0B3 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				3A7814A81CDC7941008CB0B3 /* factor */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -124,6 +147,7 @@
 				3A7814921CDC65FD008CB0B3 /* C */,
 				3A7814911CDC65F9008CB0B3 /* V */,
 				3A7814901CDC65F5008CB0B3 /* M */,
+				3A6532FD1CDCA3F30062D687 /* O */,
 			);
 			name = Push;
 			sourceTree = "<group>";
@@ -203,6 +227,10 @@
 				3A78149A1CDC663A008CB0B3 /* MGPushViewController.swift */,
 				3A7814A41CDC7187008CB0B3 /* MGNewBookViewController.swift */,
 				3A6532FB1CDC819A0062D687 /* MGPhotoSelectController.swift */,
+				3A6532FF1CDCAB950062D687 /* MGPush_TitleController.swift */,
+				3A6533011CDCABB60062D687 /* MGPush_ScoreController.swift */,
+				3A6533031CDCABD50062D687 /* MGPush_CatgoryController.swift */,
+				3A6533051CDCAC190062D687 /* MGPush_CommentController.swift */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -342,12 +370,16 @@
 			files = (
 				3A78149B1CDC663A008CB0B3 /* MGPushViewController.swift in Sources */,
 				3A7814841CDC6409008CB0B3 /* config.swift in Sources */,
+				3A6533021CDCABB60062D687 /* MGPush_ScoreController.swift in Sources */,
+				3A6533061CDCAC190062D687 /* MGPush_CommentController.swift in Sources */,
 				3A7814A51CDC7187008CB0B3 /* MGNewBookViewController.swift in Sources */,
 				3A7814A31CDC6692008CB0B3 /* MGCircleViewController.swift in Sources */,
 				3A78149D1CDC6648008CB0B3 /* MGMoreViewController.swift in Sources */,
 				3A7814751CDC62E7008CB0B3 /* GoodBookDemo.xcdatamodeld in Sources */,
 				3A7814AA1CDC79CB008CB0B3 /* MGFactor.swift in Sources */,
+				3A6533041CDCABD50062D687 /* MGPush_CatgoryController.swift in Sources */,
 				3A7814A71CDC73F8008CB0B3 /* MGBookTitleView.swift in Sources */,
+				3A6533001CDCAB950062D687 /* MGPush_TitleController.swift in Sources */,
 				3A78146D1CDC62E7008CB0B3 /* AppDelegate.swift in Sources */,
 				3A7814991CDC662D008CB0B3 /* MGSearchViewController.swift in Sources */,
 				3A6532FC1CDC819A0062D687 /* MGPhotoSelectController.swift in Sources */,

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol MGPhotoSelectControllerDelegate: NSObjectProtocol{
-    func selectImage(image: UIImage)
+    func getImageFromPicker(image: UIImage)
 }
 
 class MGPhotoSelectController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
@@ -91,7 +91,7 @@ class MGPhotoSelectController: UIViewController,UIImagePickerControllerDelegate,
     // 代理方法
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         let newImage = info[UIImagePickerControllerOriginalImage] as! UIImage
-        self.delegate?.selectImage(newImage)
+        self.delegate?.getImageFromPicker(newImage)
         self.dismissViewControllerAnimated(false, completion: nil)
         
     }

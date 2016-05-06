@@ -24,7 +24,7 @@ class MGPushViewController: UIViewController {
         navigationController?.navigationBar.addSubview(navgationView)
         
         let addBtn = UIButton(frame: CGRectMake(20, 20, MGScreen_Width, 45))
-        addBtn.setImage(UIImage(named: ""), forState: .Normal)
+        addBtn.setImage(UIImage(named: "plus circle"), forState: .Normal)
         addBtn.setTitle("   新建书评 ", forState: .Normal)
         addBtn.setTitleColor(UIColor.blackColor(), forState: .Normal)
         

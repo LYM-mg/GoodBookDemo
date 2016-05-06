@@ -13,4 +13,5 @@ let MGScreen_Width = UIScreen.mainScreen().bounds.width
 /** 屏幕的高度 */
 let MGScreen_Height = UIScreen.mainScreen().bounds.height
 
+/** 颜色 */
 let MAIN_Color = UIColor(red: 233/255, green: 144/255, blue: 118/255, alpha: 1)

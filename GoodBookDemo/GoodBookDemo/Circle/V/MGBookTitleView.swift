@@ -17,7 +17,7 @@ class MGBookTitleView: UIView {
     var bookCover: UIButton?
     var bookName: UITextField?
     var bookEditor: UITextField?
-    var delegate: MGBookTitleViewDelegate?
+    weak var delegate: MGBookTitleViewDelegate?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,7 +32,7 @@ class MGBookTitleView: UIView {
     //MARK:- 内部控制方法
     func setUpUI(){
         bookCover = UIButton(frame: CGRectMake(10, 8, 110, 140))
-        bookCover?.setImage(UIImage(named: "chat_photo"), forState: .Normal)
+        bookCover?.setImage(UIImage(named: "Cover"), forState: .Normal)
         bookCover?.addTarget(self, action: Selector("changebookCover"), forControlEvents: .TouchUpInside)
         
         let bookNameX = CGRectGetMaxX((bookCover?.frame)!) + 20

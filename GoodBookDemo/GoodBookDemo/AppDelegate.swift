@@ -29,11 +29,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         tabBarVC.viewControllers = [rankController,searchController,pushController,circleController,moreController]
         
-        rankController.tabBarItem = UITabBarItem(title: "排行榜", image: UIImage(named: "chat_photo"), selectedImage: UIImage(named: "发现"))
-        searchController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "chat_photo"), selectedImage: UIImage(named: ""))
-        pushController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "chat_photo"), selectedImage: UIImage(named: ""))
-        circleController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "chat_photo"), selectedImage: UIImage(named: "圈子"))
-        moreController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "chat_photo"), selectedImage: UIImage(named: "更多"))
+        rankController.tabBarItem = UITabBarItem(title: "排行榜", image: UIImage(named: "bio"), selectedImage: UIImage(named: "bio_red"))
+        searchController.tabBarItem = UITabBarItem(title: "发现", image: UIImage(named: "timer 2"), selectedImage: UIImage(named: "timer 2"))
+        pushController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "pencil"), selectedImage: UIImage(named: "pencil_red"))
+        circleController.tabBarItem = UITabBarItem(title: "圈子", image: UIImage(named: "users two-2"), selectedImage: UIImage(named: "users two-2_red"))
+        moreController.tabBarItem = UITabBarItem(title: "更多", image: UIImage(named: "users two-2"), selectedImage: UIImage(named: "users two-2_red"))
         
         rankController.tabBarController?.tabBar.tintColor = MAIN_Color
         

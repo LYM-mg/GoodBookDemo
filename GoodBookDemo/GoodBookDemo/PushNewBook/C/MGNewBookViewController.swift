@@ -14,6 +14,9 @@ class MGNewBookViewController: UIViewController,MGBookTitleViewDelegate,MGPhotoS
     var tableView: UITableView?
     var book_Title = ""
     
+    var LD_Score: LDXScore?
+    var isShowStar = false
+    
     var titleArray:Array<String> = ["标题","评分","分类","书评"]
     
     override func viewDidLoad() {
@@ -34,6 +37,14 @@ class MGNewBookViewController: UIViewController,MGBookTitleViewDelegate,MGPhotoS
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         self.view.addSubview(tableView)
         self.tableView = tableView
+        
+        // 添加评论
+        let LD_Score = LDXScore(frame: CGRectMake(10, 20, 100, 30))
+        LD_Score.normalImg = UIImage(named: "")
+        LD_Score.highlightImg = UIImage(named: "")
+        LD_Score.show_star = 5
+        LD_Score.show_score = 5
+        self.LD_Score = LD_Score
     }
     
     // MARK:- 按钮监听操作
@@ -73,6 +84,13 @@ extension MGNewBookViewController: UITableViewDataSource,UITableViewDelegate {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .Value1, reuseIdentifier: cellIdentifier)
+        /**
+        *  移除cell中的所有内容
+        */
+        for view in cell.contentView.subviews {
+            view.removeFromSuperview()
+        }
+
         if indexPath.row != 1 {
             cell.accessoryType = .DisclosureIndicator
         }
@@ -81,11 +99,16 @@ extension MGNewBookViewController: UITableViewDataSource,UITableViewDelegate {
         cell.textLabel?.font = UIFont.systemFontOfSize(14)
         cell.detailTextLabel?.font = UIFont.systemFontOfSize(14)
         
+        if isShowStar && indexPath.row == 2{
+            cell.contentView.addSubview(self.LD_Score!)
+        }
+        
         switch indexPath.row{
             case 0:
                 cell.detailTextLabel?.text = book_Title
                 break
             case 1:
+                
                 break
             case 2:
                 break
@@ -104,7 +127,7 @@ extension MGNewBookViewController: UITableViewDataSource,UITableViewDelegate {
             tableViewSelectTitle()
             break
         case 1:
-            tableViewSelectScore()
+            tableViewSelectScore(indexPath.row)
             break
         case 2:
             tableViewSelectCatgory()
@@ -121,7 +144,7 @@ extension MGNewBookViewController: UITableViewDataSource,UITableViewDelegate {
     private func tableViewSelectTitle(){
         let titleController = MGPush_TitleController()
         MGFactor().addTitleWithTitle(titleController)
-        titleController.callBack = {(title) in
+        titleController.callBack = {[unowned self](title) in
             self.book_Title = title
             self.tableView?.reloadRowsAtIndexPaths([NSIndexPath(forRow: 0, inSection: 0)], withRowAnimation: .Fade)
         }
@@ -130,9 +153,23 @@ extension MGNewBookViewController: UITableViewDataSource,UITableViewDelegate {
         }
     }
     
-    private func tableViewSelectScore(){
-        
+    private func tableViewSelectScore(index: Int){
+         let tempIndexPath = NSIndexPath(forRow: index+1, inSection: 0)
+        self.tableView?.beginUpdates()
+        if isShowStar {
+            self.titleArray.removeAtIndex(index+1)
+            self.tableView?.deleteRowsAtIndexPaths([tempIndexPath], withRowAnimation: .Left)
+            self.tableView?.reloadData()
+            isShowStar = false
+        }else {
+            self.titleArray.insert("", atIndex: index+1)
+            self.tableView?.insertRowsAtIndexPaths([tempIndexPath], withRowAnimation: .Right)
+            self.tableView?.reloadData()
+            isShowStar = true
+        }
+        self.tableView?.endUpdates()
     }
+
     
     private func tableViewSelectCatgory(){
         let catgoryController = MGPush_CatgoryController()

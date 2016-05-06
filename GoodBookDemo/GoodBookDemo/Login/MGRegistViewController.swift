@@ -69,7 +69,7 @@ class MGRegistViewController: UIViewController {
     // MARK:- 注册键盘出现和消失
     func keyboardDidShow() {
         UIView.animateWithDuration(0.3) { () -> Void in
-            self.topLayout.constant = -200
+            self.topLayout.constant = -180
             self.view.layoutIfNeeded()
         }
     }

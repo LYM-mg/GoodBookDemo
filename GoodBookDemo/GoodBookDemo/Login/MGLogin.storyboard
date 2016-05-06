@@ -8,7 +8,7 @@
         <!--Login View Controller-->
         <scene sceneID="cgm-om-2cy">
             <objects>
-                <viewController id="Yo6-qi-ZYg" customClass="MGLoginViewController" customModule="GoodBookDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MGLogin" id="Yo6-qi-ZYg" customClass="MGLoginViewController" customModule="GoodBookDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="n9P-Gp-3hZ"/>
                         <viewControllerLayoutGuide type="bottom" id="NLE-yK-qT5"/>
@@ -28,7 +28,7 @@
                                 <rect key="frame" x="35" y="330" width="305" height="30"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZ8-GM-Aro">
                                 <rect key="frame" x="275" y="617" width="80" height="30"/>
@@ -112,13 +112,13 @@
                                 <rect key="frame" x="24" y="224" width="327" height="30"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请输入密码" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ3-DK-DEU">
                                 <rect key="frame" x="24" y="279" width="327" height="30"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7B-gZ-6sW">
                                 <rect key="frame" x="24" y="394" width="327" height="30"/>
@@ -130,6 +130,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awz-FI-wDL">
                                 <rect key="frame" x="330" y="35" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="d7k-cE-arx"/>
                                     <constraint firstAttribute="height" constant="30" id="de1-2a-JTD"/>

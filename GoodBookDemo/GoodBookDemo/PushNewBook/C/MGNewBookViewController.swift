@@ -39,12 +39,14 @@ class MGNewBookViewController: UIViewController,MGBookTitleViewDelegate,MGPhotoS
         self.tableView = tableView
         
         // 添加评论
-        let LD_Score = LDXScore(frame: CGRectMake(10, 20, 100, 30))
-        LD_Score.normalImg = UIImage(named: "")
-        LD_Score.highlightImg = UIImage(named: "")
+        let LD_Score = LDXScore(frame: CGRectMake(150, 10, 100, 30))
+        LD_Score.isSelect = true
+        LD_Score.normalImg = UIImage(named: "btn_star_evaluation_normal")
+        LD_Score.highlightImg = UIImage(named: "btn_star_evaluation_press")
         LD_Score.show_star = 5
         LD_Score.show_score = 5
         self.LD_Score = LD_Score
+        
     }
     
     // MARK:- 按钮监听操作
@@ -93,6 +95,8 @@ extension MGNewBookViewController: UITableViewDataSource,UITableViewDelegate {
 
         if indexPath.row != 1 {
             cell.accessoryType = .DisclosureIndicator
+        }else {
+            cell.accessoryType = .None
         }
         
         cell.textLabel?.text = self.titleArray[indexPath.row]

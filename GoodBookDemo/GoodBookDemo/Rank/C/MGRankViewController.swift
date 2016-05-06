@@ -16,6 +16,7 @@ class MGRankViewController: UIViewController {
         
         let centerLabel = UILabel()
         centerLabel.center = CGPointMake(MGScreen_Width/2, MGScreen_Height/2)
+        centerLabel.textAlignment = .Center
         centerLabel.text = "沃日，真是帅啊，JR疯起来毫不讲理啊"
         centerLabel.frame.size.width = 300
         centerLabel.frame.size.height = 30

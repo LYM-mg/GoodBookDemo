@@ -16,7 +16,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+       
+        self.window = UIWindow(frame: CGRectMake(0, 0, MGScreen_Width, MGScreen_Height))
+        
+        let tabBarVC = UITabBarController()
+        
+        let rankController = UINavigationController(rootViewController: MGRankViewController())
+        let searchController = UINavigationController(rootViewController:MGSearchViewController())
+        let pushController = UINavigationController(rootViewController:MGPushViewController())
+        let circleController = UINavigationController(rootViewController:MGCircleViewController())
+        let moreController = UINavigationController(rootViewController:MGMoreViewController())
+        
+        tabBarVC.viewControllers = [rankController,searchController,pushController,circleController,moreController]
+        
+        rankController.tabBarItem = UITabBarItem(title: "排行榜", image: UIImage(named: "chat_photo"), selectedImage: UIImage(named: "发现"))
+        searchController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "chat_photo"), selectedImage: UIImage(named: ""))
+        pushController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "chat_photo"), selectedImage: UIImage(named: ""))
+        circleController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "chat_photo"), selectedImage: UIImage(named: "圈子"))
+        moreController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "chat_photo"), selectedImage: UIImage(named: "更多"))
+        
+        rankController.tabBarController?.tabBar.tintColor = MAIN_Color
+        
+        window?.rootViewController = tabBarVC
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

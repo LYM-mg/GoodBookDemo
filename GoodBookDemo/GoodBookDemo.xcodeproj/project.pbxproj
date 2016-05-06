@@ -8,22 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		3A78146D1CDC62E7008CB0B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78146C1CDC62E7008CB0B3 /* AppDelegate.swift */; };
-		3A78146F1CDC62E7008CB0B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78146E1CDC62E7008CB0B3 /* ViewController.swift */; };
-		3A7814721CDC62E7008CB0B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7814701CDC62E7008CB0B3 /* Main.storyboard */; };
 		3A7814751CDC62E7008CB0B3 /* GoodBookDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A7814731CDC62E7008CB0B3 /* GoodBookDemo.xcdatamodeld */; };
 		3A7814771CDC62E7008CB0B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7814761CDC62E7008CB0B3 /* Assets.xcassets */; };
 		3A78147A1CDC62E7008CB0B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7814781CDC62E7008CB0B3 /* LaunchScreen.storyboard */; };
+		3A7814841CDC6409008CB0B3 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7814831CDC6409008CB0B3 /* config.swift */; settings = {ASSET_TAGS = (); }; };
+		3A7814971CDC6622008CB0B3 /* MGRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7814961CDC6622008CB0B3 /* MGRankViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3A7814991CDC662D008CB0B3 /* MGSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7814981CDC662D008CB0B3 /* MGSearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3A78149B1CDC663A008CB0B3 /* MGPushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78149A1CDC663A008CB0B3 /* MGPushViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3A78149D1CDC6648008CB0B3 /* MGMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78149C1CDC6648008CB0B3 /* MGMoreViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3A7814A31CDC6692008CB0B3 /* MGCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7814A21CDC6692008CB0B3 /* MGCircleViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3A7814A51CDC7187008CB0B3 /* MGNewBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7814A41CDC7187008CB0B3 /* MGNewBookViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3A7814A71CDC73F8008CB0B3 /* MGBookTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7814A61CDC73F8008CB0B3 /* MGBookTitleView.swift */; settings = {ASSET_TAGS = (); }; };
+		3A7814AA1CDC79CB008CB0B3 /* MGFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7814A91CDC79CB008CB0B3 /* MGFactor.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A7814691CDC62E7008CB0B3 /* GoodBookDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodBookDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A78146C1CDC62E7008CB0B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A78146E1CDC62E7008CB0B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3A7814711CDC62E7008CB0B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A7814741CDC62E7008CB0B3 /* GoodBookDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoodBookDemo.xcdatamodel; sourceTree = "<group>"; };
 		3A7814761CDC62E7008CB0B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A7814791CDC62E7008CB0B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A78147B1CDC62E7008CB0B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A7814831CDC6409008CB0B3 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		3A7814851CDC641C008CB0B3 /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		3A7814961CDC6622008CB0B3 /* MGRankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGRankViewController.swift; sourceTree = "<group>"; };
+		3A7814981CDC662D008CB0B3 /* MGSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGSearchViewController.swift; sourceTree = "<group>"; };
+		3A78149A1CDC663A008CB0B3 /* MGPushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGPushViewController.swift; sourceTree = "<group>"; };
+		3A78149C1CDC6648008CB0B3 /* MGMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGMoreViewController.swift; sourceTree = "<group>"; };
+		3A7814A21CDC6692008CB0B3 /* MGCircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGCircleViewController.swift; sourceTree = "<group>"; };
+		3A7814A41CDC7187008CB0B3 /* MGNewBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGNewBookViewController.swift; sourceTree = "<group>"; };
+		3A7814A61CDC73F8008CB0B3 /* MGBookTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGBookTitleView.swift; sourceTree = "<group>"; };
+		3A7814A91CDC79CB008CB0B3 /* MGFactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGFactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +71,199 @@
 		3A78146B1CDC62E7008CB0B3 /* GoodBookDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3A7814891CDC6597008CB0B3 /* More */,
+				3A78149E1CDC6663008CB0B3 /* Circle */,
+				3A7814881CDC658F008CB0B3 /* Push */,
+				3A7814871CDC6565008CB0B3 /* Search */,
+				3A7814861CDC655C008CB0B3 /* Rank */,
+				3A7814811CDC6341008CB0B3 /* Other */,
 				3A78146C1CDC62E7008CB0B3 /* AppDelegate.swift */,
-				3A78146E1CDC62E7008CB0B3 /* ViewController.swift */,
-				3A7814701CDC62E7008CB0B3 /* Main.storyboard */,
 				3A7814761CDC62E7008CB0B3 /* Assets.xcassets */,
 				3A7814781CDC62E7008CB0B3 /* LaunchScreen.storyboard */,
 				3A78147B1CDC62E7008CB0B3 /* Info.plist */,
 				3A7814731CDC62E7008CB0B3 /* GoodBookDemo.xcdatamodeld */,
+				3A7814831CDC6409008CB0B3 /* config.swift */,
+				3A7814851CDC641C008CB0B3 /* bridge.h */,
 			);
 			path = GoodBookDemo;
+			sourceTree = "<group>";
+		};
+		3A7814811CDC6341008CB0B3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3A7814A81CDC7941008CB0B3 /* factor */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		3A7814861CDC655C008CB0B3 /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+				3A78148C1CDC65C1008CB0B3 /* C */,
+				3A78148B1CDC65BB008CB0B3 /* V */,
+				3A78148A1CDC65B3008CB0B3 /* M */,
+			);
+			name = Rank;
+			sourceTree = "<group>";
+		};
+		3A7814871CDC6565008CB0B3 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				3A78148F1CDC65ED008CB0B3 /* C */,
+				3A78148E1CDC65E9008CB0B3 /* V */,
+				3A78148D1CDC65E3008CB0B3 /* M */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		3A7814881CDC658F008CB0B3 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				3A7814921CDC65FD008CB0B3 /* C */,
+				3A7814911CDC65F9008CB0B3 /* V */,
+				3A7814901CDC65F5008CB0B3 /* M */,
+			);
+			name = Push;
+			sourceTree = "<group>";
+		};
+		3A7814891CDC6597008CB0B3 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				3A7814951CDC6609008CB0B3 /* C */,
+				3A7814941CDC6605008CB0B3 /* V */,
+				3A7814931CDC6601008CB0B3 /* M */,
+			);
+			name = More;
+			sourceTree = "<group>";
+		};
+		3A78148A1CDC65B3008CB0B3 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		3A78148B1CDC65BB008CB0B3 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		3A78148C1CDC65C1008CB0B3 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				3A7814961CDC6622008CB0B3 /* MGRankViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		3A78148D1CDC65E3008CB0B3 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		3A78148E1CDC65E9008CB0B3 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		3A78148F1CDC65ED008CB0B3 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				3A7814981CDC662D008CB0B3 /* MGSearchViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		3A7814901CDC65F5008CB0B3 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		3A7814911CDC65F9008CB0B3 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				3A7814A61CDC73F8008CB0B3 /* MGBookTitleView.swift */,
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		3A7814921CDC65FD008CB0B3 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				3A78149A1CDC663A008CB0B3 /* MGPushViewController.swift */,
+				3A7814A41CDC7187008CB0B3 /* MGNewBookViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		3A7814931CDC6601008CB0B3 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		3A7814941CDC6605008CB0B3 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		3A7814951CDC6609008CB0B3 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				3A78149C1CDC6648008CB0B3 /* MGMoreViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		3A78149E1CDC6663008CB0B3 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				3A7814A11CDC6685008CB0B3 /* C */,
+				3A7814A01CDC6678008CB0B3 /* V */,
+				3A78149F1CDC6674008CB0B3 /* M */,
+			);
+			name = Circle;
+			sourceTree = "<group>";
+		};
+		3A78149F1CDC6674008CB0B3 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		3A7814A01CDC6678008CB0B3 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		3A7814A11CDC6685008CB0B3 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				3A7814A21CDC6692008CB0B3 /* MGCircleViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		3A7814A81CDC7941008CB0B3 /* factor */ = {
+			isa = PBXGroup;
+			children = (
+				3A7814A91CDC79CB008CB0B3 /* MGFactor.swift */,
+			);
+			name = factor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +292,7 @@
 		3A7814611CDC62E7008CB0B3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MG;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = ming;
 				TargetAttributes = {
@@ -127,7 +327,6 @@
 			files = (
 				3A78147A1CDC62E7008CB0B3 /* LaunchScreen.storyboard in Resources */,
 				3A7814771CDC62E7008CB0B3 /* Assets.xcassets in Resources */,
-				3A7814721CDC62E7008CB0B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +337,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A78146F1CDC62E7008CB0B3 /* ViewController.swift in Sources */,
+				3A78149B1CDC663A008CB0B3 /* MGPushViewController.swift in Sources */,
+				3A7814841CDC6409008CB0B3 /* config.swift in Sources */,
+				3A7814A51CDC7187008CB0B3 /* MGNewBookViewController.swift in Sources */,
+				3A7814A31CDC6692008CB0B3 /* MGCircleViewController.swift in Sources */,
+				3A78149D1CDC6648008CB0B3 /* MGMoreViewController.swift in Sources */,
 				3A7814751CDC62E7008CB0B3 /* GoodBookDemo.xcdatamodeld in Sources */,
+				3A7814AA1CDC79CB008CB0B3 /* MGFactor.swift in Sources */,
+				3A7814A71CDC73F8008CB0B3 /* MGBookTitleView.swift in Sources */,
 				3A78146D1CDC62E7008CB0B3 /* AppDelegate.swift in Sources */,
+				3A7814991CDC662D008CB0B3 /* MGSearchViewController.swift in Sources */,
+				3A7814971CDC6622008CB0B3 /* MGRankViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3A7814701CDC62E7008CB0B3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A7814711CDC62E7008CB0B3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3A7814781CDC62E7008CB0B3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -255,6 +454,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ming.GoodBookDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = GoodBookDemo/bridge.h;
 			};
 			name = Debug;
 		};
@@ -266,6 +466,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ming.GoodBookDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = GoodBookDemo/bridge.h;
 			};
 			name = Release;
 		};

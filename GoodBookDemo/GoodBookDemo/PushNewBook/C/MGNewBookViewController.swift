@@ -17,6 +17,10 @@ class MGNewBookViewController: UIViewController,MGBookTitleViewDelegate,MGPhotoS
     var LD_Score: LDXScore?
     var isShowScore = false
     
+    var type = "文学"
+    var detaiType = "文学"
+
+    
     var titleArray:Array<String> = ["标题","评分","分类","书评"]
     
     override func viewDidLoad() {
@@ -115,6 +119,7 @@ extension MGNewBookViewController: UITableViewDataSource,UITableViewDelegate {
                 
                 break
             case 2:
+                cell.detailTextLabel?.text = self.type + "->" + self.detaiType
                 break
             case 3:
                 break
@@ -199,6 +204,17 @@ extension MGNewBookViewController: UITableViewDataSource,UITableViewDelegate {
         leftBtn.setTitleColor(MG_RGB(39, g: 89, b: 99), forState: .Normal)
         rightBtn.setTitleColor(MG_RGB(39, g: 89, b: 99), forState: .Normal)
         
+        // 顺传
+        vc.type = self.type
+        vc.detailType = self.detaiType
+        
+        // 逆传
+        vc.callBack = {[unowned self](type: String, detailType: String) -> Void in
+            self.type = type
+            self.detaiType = detailType
+            self.tableView?.reloadData()
+        }
+
         presentViewController(vc, animated: true) { () -> Void in
             
         }

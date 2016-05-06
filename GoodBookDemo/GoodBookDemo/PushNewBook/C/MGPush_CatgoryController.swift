@@ -40,7 +40,7 @@ class MGPush_CatgoryController: UIViewController,IGLDropDownMenuDelegate{
     
     var type = "文学"
     var detailType = "文学"
-//    var callBack: Push_TypeControllerBlock?
+    var callBack: ((type:String,detailType:String) -> ())?
 
     
     override func viewDidLoad() {
@@ -264,7 +264,7 @@ class MGPush_CatgoryController: UIViewController,IGLDropDownMenuDelegate{
             self.dropDownMenu2?.dropDownItems = dropDownItem2 as [AnyObject]
             self.dropDownMenu2?.frame = CGRectMake(MGScreen_Width/2+10, 150, MGScreen_Width/2-30, (MGScreen_Height-200)/7)
             self.view.addSubview(self.dropDownMenu2!)
-//            self.dropDownMenu2?.reloadView()
+            self.dropDownMenu2?.reloadView()
 //            setdropDownMenu(self.dropDownMenu1,frame: CGRectMake(20, 150, MGScreen_Width/2-30, (MGScreen_Height-200)/7), dropDownItems: dropDownItem1)
 //            setdropDownMenu(self.dropDownMenu2,frame: CGRectMake(MGScreen_Width/2+10, 150, MGScreen_Width/2-30, (MGScreen_Height-200)/7), dropDownItems: dropDownItem2)
     }
@@ -310,7 +310,10 @@ class MGPush_CatgoryController: UIViewController,IGLDropDownMenuDelegate{
     }
     
     func sure(){
-        print("发布")
+        self.callBack!(type:self.type,detailType: self.detailType)
+        self.dismissViewControllerAnimated(true) { () -> Void in
+            
+        }
     }
 }
 
